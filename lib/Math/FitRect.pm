@@ -1,6 +1,6 @@
 package Math::FitRect;
 BEGIN {
-  $Math::FitRect::VERSION = '0.03';
+  $Math::FitRect::VERSION = '0.04';
 }
 use strict;
 use warnings;
@@ -24,8 +24,7 @@ Math::FitRect - Resize one rect in to another while preserving aspect ratio.
 This module is very simple in its content but can save much time, much like
 other simplistic modules like L<Data::Pager>.  This module is useful for
 calculating what size you should resize images as for such things as
-thumbnails.  If you find any other uses for "fitting rectangles in to each
-other" let the author know.
+thumbnails.
 
 =cut
 
@@ -73,10 +72,10 @@ sub fit_rect {
     # This will return: {w=>80, h=>40, x=>-19, y=>0}
     my $rect = crop_rect( [80,40] => 40 );
 
-Like the fit_rect function, crop_rect takes two rectangles as a parameter and it 
-makes $rect1 completely fill $rect2.  This can mean that the top and bottom (as 
-in the diagram above) or the left and right get "chopped" off, or cropped as it 
-is usually called.  This method returns a has just like fit_rect.
+Like the fit_rect function, crop_rect takes two rectangles as a parameter and it
+makes $rect1 completely fill $rect2.  This can mean that the top and bottom or
+the left and right get chopped off (cropped).  This method returns a hash ref just
+like fit_rect.
 
 =cut
 

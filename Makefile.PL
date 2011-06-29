@@ -4,7 +4,7 @@ use warnings;
 
 
 
-use ExtUtils::MakeMaker 6.31;
+use ExtUtils::MakeMaker 6.30;
 
 
 
@@ -15,14 +15,14 @@ my %WriteMakefileArgs = (
     'Test::Simple' => '0.94'
   },
   'CONFIGURE_REQUIRES' => {
-    'ExtUtils::MakeMaker' => '6.31'
+    'ExtUtils::MakeMaker' => '6.30'
   },
   'DISTNAME' => 'Math-FitRect',
   'EXE_FILES' => [],
   'LICENSE' => 'perl',
   'NAME' => 'Math::FitRect',
   'PREREQ_PM' => {},
-  'VERSION' => '0.03',
+  'VERSION' => '0.04',
   'test' => {
     'TESTS' => 't/*.t'
   }
